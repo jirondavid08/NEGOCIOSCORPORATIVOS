@@ -4,6 +4,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import { properties } from "@/lib/properties";
 import PropertyCard from "@/components/PropertyCard";
 import TestimonialGrid from "@/components/TestimonialGrid";
+import BuildingScrollAnimation from "@/components/BuildingScrollAnimation";
 import { siteConfig } from "@/lib/site";
 
 const locale = "es" as const;
@@ -50,6 +51,16 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* CONSTRUCCIÓN — animación de scroll */}
+      <BuildingScrollAnimation
+        copy={{
+          eyebrow: "Cada gran empresa empieza construyendo las bases correctas",
+          titleBefore: "Construimos el espacio ideal",
+          titleAfter: "para tu empresa",
+          cta: "Hablemos de tu próximo proyecto",
+        }}
+      />
 
       {/* PARQUES BANNER */}
       <a
